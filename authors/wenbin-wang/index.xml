@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wenbin Wang | Kenneth</title>
+    <link>www.kennethwong.tech/authors/wenbin-wang/</link>
+      <atom:link href="www.kennethwong.tech/authors/wenbin-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wenbin Wang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 15 Jun 2019 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Wenbin Wang</title>
+      <link>www.kennethwong.tech/authors/wenbin-wang/</link>
+    </image>
+    
+    <item>
+      <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
+      <link>www.kennethwong.tech/publication/cvpr19/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
+      <guid>www.kennethwong.tech/publication/cvpr19/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
