@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Kenneth</title>
-    <link>www.kennethwong.tech/tags/</link>
-      <atom:link href="www.kennethwong.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kennethwong.tech/tags/</link>
+      <atom:link href="https://kennethwong.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Tags</title>
-      <link>www.kennethwong.tech/tags/</link>
+      <link>https://kennethwong.tech/tags/</link>
     </image>
     
   </channel>
