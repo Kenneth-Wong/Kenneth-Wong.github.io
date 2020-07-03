@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/authors/xilin-chen/</link>
       <atom:link href="https://kennethwong.tech/authors/xilin-chen/index.xml" rel="self" type="application/rss+xml" />
     <description>Xilin Chen</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 15 Jun 2019 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Xilin Chen</title>
       <link>https://kennethwong.tech/authors/xilin-chen/</link>
     </image>
+    
+    <item>
+      <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
+      <link>https://kennethwong.tech/publication/eccv20/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/publication/eccv20/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
