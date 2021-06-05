@@ -5,12 +5,21 @@
     <link>https://kennethwong.tech/</link>
       <atom:link href="https://kennethwong.tech/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth</title>
       <link>https://kennethwong.tech/</link>
     </image>
+    
+    <item>
+      <title>Simplex</title>
+      <link>https://kennethwong.tech/post/simplex/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/post/simplex/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>

@@ -5,12 +5,21 @@
     <link>https://kennethwong.tech/post/</link>
       <atom:link href="https://kennethwong.tech/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>https://kennethwong.tech/post/</link>
     </image>
+    
+    <item>
+      <title>Simplex</title>
+      <link>https://kennethwong.tech/post/simplex/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/post/simplex/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

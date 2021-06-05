@@ -1,80 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://kennethwong.tech/publication_types/1/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/publication_types/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/publication/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/ruiping-wang/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/shiguang-shan/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/publication/eccv20/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/wenbin-wang/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/xilin-chen/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/publication/cvpr19/</loc>
-    <lastmod>2019-06-15T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/post/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/tags/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://kennethwong.tech/en/sitemap.xml</loc>
+		
+	   	<lastmod>2021-06-04T18:12:26+08:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://kennethwong.tech/zh/sitemap.xml</loc>
+		
+	   	<lastmod>2021-06-04T18:12:26+08:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

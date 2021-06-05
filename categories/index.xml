@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/categories/</link>
       <atom:link href="https://kennethwong.tech/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Categories</title>
       <link>https://kennethwong.tech/categories/</link>
     </image>
+    
+    <item>
+      <title>basic algorithm</title>
+      <link>https://kennethwong.tech/categories/basic-algorithm/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/categories/basic-algorithm/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/authors/</link>
       <atom:link href="https://kennethwong.tech/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
       <link>https://kennethwong.tech/authors/</link>
     </image>
+    
+    <item>
+      <title>Kenneth</title>
+      <link>https://kennethwong.tech/authors/kenneth/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/authors/kenneth/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ruiping Wang</title>
