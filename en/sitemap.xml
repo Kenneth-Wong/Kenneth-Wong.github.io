@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://kennethwong.tech/categories/deep-learning/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kennethwong.tech/</loc>
     <lastmod>2021-06-04T18:12:26+08:00</lastmod>
     <xhtml:link
@@ -58,6 +63,21 @@
   </url>
   
   <url>
+    <loc>https://kennethwong.tech/authors/kenneth-wong/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/zh/authors/kenneth-wong/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/authors/kenneth-wong/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kennethwong.tech/tags/optimization/</loc>
     <lastmod>2021-06-04T18:12:26+08:00</lastmod>
   </url>
@@ -74,6 +94,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kennethwong.tech/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/post/rnn/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/zh/post/rnn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/post/rnn/"
                 />
   </url>
   
@@ -105,6 +140,11 @@
                 hreflang="en"
                 href="https://kennethwong.tech/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/tags/time-series-modeling/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
   </url>
   
   <url>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>时序建模 | Kenneth</title>
+    <link>https://kennethwong.tech/zh/tags/%E6%97%B6%E5%BA%8F%E5%BB%BA%E6%A8%A1/</link>
+      <atom:link href="https://kennethwong.tech/zh/tags/%E6%97%B6%E5%BA%8F%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" />
+    <description>时序建模</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>时序建模</title>
+      <link>https://kennethwong.tech/zh/tags/%E6%97%B6%E5%BA%8F%E5%BB%BA%E6%A8%A1/</link>
+    </image>
+    
+    <item>
+      <title>递归神经网络</title>
+      <link>https://kennethwong.tech/zh/post/rnn/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/zh/post/rnn/</guid>
+      <description>&lt;h2 id=&#34;1-rnn&#34;&gt;1 RNN&lt;/h2&gt;
+&lt;p&gt;人在阅读文字时，具有短暂的记忆，比如在阅读当前词汇时你会对之前的文字有一些印象，而不是全部丢弃前面的内容。对于神经网络，我们也需要这样的功能，即保持对之前内容的短暂记忆。而RNN递归神经网络提供了一种实现方法。&lt;/p&gt;
+&lt;p&gt;最简单的RNN递归公式如下（其中$\hat{y}^{(t)}$是预测的概率向量，$y^{(t)}$是标量类别标签）：
+$$
+\begin{equation}
+\begin{split}
+h^{(t)}&amp;amp;=\tanh(Ux^{(t)}+Wh^{(t-1)}+b) \cr
+o^{(t)}&amp;amp;=Vh^{(t)}+c \cr
+\hat{y}^{(t)}&amp;amp;=\mathrm{softmax}(o^{(t)})\cr
+L^{(t)}&amp;amp;=-\log \hat{y}^{(t)}_{y_t}\cr
+L&amp;amp;=\sum L^{(t)}
+\end{split}
+\end{equation}
+$$
+BPTT梯度回传算法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$
+\nabla_{o_i^{(t)}}L=\nabla_{o_i^{(t)}} L^{(t)}=-\nabla_{o_i^{(t)}}\log \frac{\exp(o_{y^{(t)}}^{(t)})}{\sum_j\exp(o_j^{(t)})}=\hat{y}_i^{(t)}-\mathbf{l}{i=y^{(t)}}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;向量表示：
+$$
+\nabla_{o^{(t)}}L=\hat{\mathbf{y}}^{(t)}-\mathbf{y}^{(t)}
+$$
+其中$\mathbf{y}^{(t)}$是由标量标签扩展的one-hot向量。即总的损失对任意一个时刻的输出的导数都可以表示成上述形式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对最后一个时间$\tau$的导数：
+$$
+\nabla_{h^{(\tau)}}L=V^T\nabla_{o^{(\tau)}}L^{(t)}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于任意的$t&amp;lt;\tau$，$h^{(t)}$接收两个方向回传的梯度：$h^{(t+1)}$和$o^{(t)}$。
+$$
+\begin{align}\nabla_{h^{(t)}}L &amp;amp;=\left(\frac{\partial o^{(t)}}{\partial h^{(t)}}\right)^T\nabla_{o^{(t)}}L+\left(\frac{\partial h^{(t+1)}}{\partial h^{(t)}}\right)^T\nabla_{h^{(t+1)}}L \cr
+&amp;amp;= V^T\nabla_{o^{(t)}}L + W^T\mathrm{diag}(1-(h^{(t+1)})^2)(\nabla_{h^{(t+1)}}L)\end{align}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对参数的求导，因为所有时间步共享参数，因此需要对所有时间步累加导数。
+$$
+\begin{equation}
+\begin{split}
+\nabla_c L &amp;amp;= \sum_t \nabla_{o^{(t)}} L \cr
+\nabla_b L&amp;amp;=\sum_t \mathrm{diag}(1-(h^{(t)})^2)\nabla_{h^{(t)}}L \cr
+\nabla_V L &amp;amp;= \sum_t (\nabla_{o^{(t)}}L) (h^{(t)})^T \cr
+\nabla_W L &amp;amp;= \sum_t \mathrm{diag}(1-(h^{(t)})^2)(\nabla_{h^{(t)}}L) (h^{(t-1)})^T \cr
+\nabla_U L &amp;amp;= \sum_t  \mathrm{diag}(1-(h^{(t)})^2)(\nabla_{h^{(t)}}L) (x^{(t)})^T
+\end{split}
+\end{equation}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;传统的RNN会有梯度消失问题，这是因为误差项累积相乘，也就是不能保持长期记忆。因此需要引入一些控制门缓解梯度消失，这样做会使得梯度误差项变成相加。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h2 id=&#34;2-lstm&#34;&gt;2 LSTM&lt;/h2&gt;
+&lt;p&gt;LSTM的提出是希望改善RNN缺少长期记忆的缺点。RNN当时间步达到一定长度时，模型很可能会忘掉之前的记忆。首先来看一张形象的LSTM模型图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521165195.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ &lt;div align=&#34;center&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521165219.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;​	&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;首先，图中顶部贯穿的一条直线是每个胞元的内部状态$c_t$。三个sigmoid函数构成三个门：输入门，遗忘门，输出门。之所以叫“门”，是因为sigmoid能够将数值	归一化到（0，1）区间，当他和向量对应元素相乘时，能够决定这个向量的保留量。三个门的计算公式有相同的形式：
+$$
+\begin{equation}
+\begin{split}
+i&amp;amp;=\sigma(U_ix_t+W_ih_{t-1})\cr
+f&amp;amp;=\sigma(U_fx_t+W_fh_{t-1})\cr
+o&amp;amp;=\sigma(U_ox_t+W_oh_{t-1})
+\end{split}
+\end{equation}
+$$
+上述公式有不同写法，比如，如果合并成一个矩阵写也可以：
+$$
+i=\sigma(W_i[x_t, h_{t-1}]+b_i)
+$$
+这与上面的式子是等价的，相当于将上面的$U_i$和$W_i$在1维度合并。&lt;/p&gt;
+&lt;p&gt;当从一个胞元过度到下一个时，首先要确定要忘记多少之前的状态，即使用遗忘门来控制过去状态$c_{t-1}$的权重。&lt;/p&gt;
+&lt;p&gt;然后，在当前状态，我们获得的新的知识需要计算，这种新的状态、输出状态一般用tanh激活函数，输出范围（-1，1），那么新的状态部分可以计算如下：
+$$
+\bar{c}_t=\tanh(U_cx_t+W_ch_{t-1})
+$$
+新状态使用输入门控制输入量，结合上面的遗忘门控制的旧状态占比，可计算出新的胞元状态：
+$$
+c_t=f * c_{t-1}+i*\bar{c}_t
+$$
+最后计算这个胞元的输出态，用输出门控制信息量：
+$$
+h_t=o_t*\tanh(c_t)
+$$&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521167732.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;RNN时LSTM的特殊情况：当输入门全1，遗忘门全0（总是抛弃过去的记忆），输出门全1时，就是一个RNN。&lt;/p&gt;
+&lt;h2 id=&#34;3-gru&#34;&gt;3 GRU&lt;/h2&gt;
+&lt;p&gt;GRU将LSTM的输入门和遗忘门合并成一个更新门$z$，并且将细胞状态和输出状态合并。&lt;/p&gt;
+&lt;div align=center&gt;
+&lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521168305.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;公式如下：
+$$
+\begin{equation}
+\begin{split}
+r_t&amp;amp;=\sigma(U_rx_t+W_rh_{t-1})\cr
+z_t&amp;amp;=\sigma(U_zx_t+W_zh_{t-1})\cr
+h_t&amp;amp;=z_t*h_{t-1}+(1-z_t)\tanh(U_hx_t+W_h(r_t*h_{t-1}))
+\end{split}
+\end{equation}
+$$
+​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

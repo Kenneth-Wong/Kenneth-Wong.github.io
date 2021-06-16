@@ -708,7 +708,7 @@ $$</p>
 <div align=center>
 <p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/img_1518535018.jpg" alt=""></p>
 </div>
-<p>在这里，我们还可以对每一组解，都将$\mathbf{A}$的列重新排列一下，将解向量也排列一下，写成分块矩阵的形式，那么就会有$\mathbf{x}_\mathbf{B}=\mathbf{B}^{-1}\mathbf{b}$和$ \mathbf{c}^T \mathbf{x}= \mathbf{c}^T_{\mathbf{B}}\mathbf{B}^{-1}\mathbf{b}$。这是两个很有用的式子，在后面单纯形算法的理解上很有帮助，这里先记下。</p>
+<p>在这里，我们还可以对每一组解，都将$\mathbf{A}​$的列重新排列一下，将解向量也排列一下，写成分块矩阵的形式，那么就会有$\mathbf{x}_\mathbf{B}=\mathbf{B}^{-1}\mathbf{b}​$和$ \mathbf{c}^T \mathbf{x}= \mathbf{c}^T_{\mathbf{B}}\mathbf{B}^{-1}\mathbf{b}​$。这是两个很有用的式子，在后面单纯形算法的理解上很有帮助，这里先记下。</p>
 <div align=center>
 <p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/img_1518536393.jpg" alt=""></p>
 </div>
@@ -745,11 +745,11 @@ $$</p>
 <p>截止到目前，我们回答了三个问题，基本上单纯形算法呼之欲出了，单纯形算法就是通过反复的基变换（通过向量的进出）来找顶点，从而找到达到最优值的顶点。但是还是有些细节需要琢磨，比如，怎么选入基向量？改善的过程什么时候停止？</p>
 <h2 id="4-入基向量的选择及停止准则">4 入基向量的选择及停止准则</h2>
 <p>以最小化问题为标准，我们的最终目标是最小化$\mathbf{c^Tx}$，因此一个很自然的贪心想法是每步的改善都尽可能地大，因此可以计算一下更新的目标函数值和原来的差值，取使得变化大的顶点继续下一步迭代。那么这个差值怎么能够向量化地计算呢？只有向量化地计算，才能避免一个一个地计算比较，提高效率。</p>
-<p>假设$\mathbf{B}=\{\mathbf{a}_1, \mathbf{a}_2,\ldots, \mathbf{a}_m\}$，那么对于任何一个非基向量$\mathbf{a}_e$，都有$\mathbf{a}_e=\lambda_1\mathbf{a}_1+\ldots+\lambda_m\mathbf{a}_m$。将$\lambda$写完整：$\lambda=[\lambda_1,\lambda_2,\ldots,\lambda_m,0,0,\ldots,-1,\ldots,0]^T$，差值
+<p>假设$\mathbf{B}=\{\mathbf{a}_1, \mathbf{a}_2,\ldots, \mathbf{a}_m\}​$，那么对于任何一个非基向量$\mathbf{a}_e​$，都有$\mathbf{a}_e=\lambda_1\mathbf{a}_1+\ldots+\lambda_m\mathbf{a}_m​$。将$\lambda​$写完整：$\lambda=[\lambda_1,\lambda_2,\ldots,\lambda_m,0,0,\ldots,-1,\ldots,0]^T​$，差值
 $$
 \mathbf{c}^T\mathbf{x}'-\mathbf{c}^T\mathbf{x}=\mathbf{c}^T(-\theta\lambda)=\theta(\mathbf{c}_e-\sum_{\mathbf{a}_i\in B}\lambda_i\mathbf{c}_i)
 $$</p>
-<p>因此我们要选使得这个值的绝对值最大的$\mathbf{a}_e$。那么什么时候表示找到最优值应该停止呢？很明显，就是对于所有$\mathbf{a}_e$，这个差值都大于等于0，即目标函数不再减小。因此，每次迭代，先计算差值，如果存在小于0的，就选一个使得差值绝对值最大的作为入基向量。</p>
+<p>因此我们要选使得这个值的绝对值最大的$\mathbf{a}_e​$。那么什么时候表示找到最优值应该停止呢？很明显，就是对于所有$\mathbf{a}_e​$，这个差值都大于等于0，即目标函数不再减小。因此，每次迭代，先计算差值，如果存在小于0的，就选一个使得差值绝对值最大的作为入基向量。</p>
 <p>嗯，接下来就是要考虑向量化操作。首先我们看一下$\lambda$能不能向量化表示：由于$\mathbf{B}\lambda=\mathbf{a}_e$（$\lambda$只取基系数部分），因此$\lambda=\mathbf{B^{-1}}\mathbf{a}_e$，如果对整个矩阵$\mathbf{A}$左乘$\mathbf{B^{-1}}$，这就很有意思了，所有的非基列将变成该非基向量用基向量表示的系数，而所有的基列将变成$e_k$，即合起来成为一个单位阵的形式。这是很关键的一步，在单纯形算法实现中也涉及到，先记下。进一步，我们取$\mathbf{c}$的基部分$\mathbf{c_B}$，这样$\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$就等于了上式中的$\sum*_{\mathbf{a}_i\in \mathbf{B}}\lambda_i\mathbf{c}_i$的向量化形式（对所有的非基向量一同操作）。然后再加上一部分，变成$\mathbf{c}^T-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$，这就是最终的形式，称之为检验数$\bar{\mathbf{c}}$。很容易验证，基向量对应的检验数都是0，我们的目标就是通过迭代，使得$\bar{\mathbf{c}}\geq0$，这时对于任何一个可行解$\mathbf{y}$（$\mathbf{Ay=b,y\geq0}$），都有$\mathbf{c}^T\mathbf{y}\geq\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}\mathbf{y}=\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{b}=\mathbf{c}_\mathbf{B}^T\mathbf{x}_\mathbf{B}=\mathbf{c}^T\mathbf{x}$，即$\mathbf{x}$就是最优的。</p>
 <h2 id="5-单纯性算法核心单纯形表">5 单纯性算法核心：单纯形表</h2>
 <p>终于，一系列的讲解结束，单纯性算法也就顺理成章了。要将上面的一堆东西整理成一个简短高效的可行算法并不简单。先贴上算法伪代码：</p>
@@ -787,10 +787,10 @@ $$</p>
 <p>第10行，高斯行变换，你会发现这样操作完后，入基列就变成和刚才出基列一样，高斯行变换保证了矩阵的性质。</p>
 </li>
 <li>
-<p>第14行，我们知道$-z=0-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{b}$，由于旧有的基对应的$c$都是0，而只有新换入的向量对应的$c_e$不为0，具体写一下，减掉的那部分就只有$c_e$和他对应的解$b_l$的乘积了。同理，第16行，$\mathbf{c}^T-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$，由于也是只有$c_e$不为0，因此就和他对应的$\mathbf{A}$的第$l$行相乘了。</p>
+<p>第14行，我们知道$-z=0-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{b}​$，由于旧有的基对应的$c​$都是0，而只有新换入的向量对应的$c_e​$不为0，具体写一下，减掉的那部分就只有$c_e​$和他对应的解$b_l​$的乘积了。同理，第16行，$\mathbf{c}^T-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}​$，由于也是只有$c_e​$不为0，因此就和他对应的$\mathbf{A}​$的第$l​$行相乘了。</p>
 </li>
 </ul>
-<p>到此，终于介绍完了单纯形算法。其他还有一些要注意的地方，比如一定要注意检验数和原目标函数的$\mathbf{c}$是完全不一样的概念，在原约束为不等式，需要加松弛变量的情况下，他们可能相等，但心里一定要区分它们，同时，这种情况下，基很容易找，就是松弛变量的那几列构成的单位阵。但是如果原约束是等式，就需要自己找基，并且这时检验数往往就和目标函数参数不同了。</p>
+<p>到此，终于介绍完了单纯形算法。其他还有一些要注意的地方，比如一定要注意检验数和原目标函数的$\mathbf{c}​$是完全不一样的概念，在原约束为不等式，需要加松弛变量的情况下，他们可能相等，但心里一定要区分它们，同时，这种情况下，基很容易找，就是松弛变量的那几列构成的单位阵。但是如果原约束是等式，就需要自己找基，并且这时检验数往往就和目标函数参数不同了。</p>
 <p>最后，本文所用的截图均来自中科院计算所B老师的课程PPT，本人在学习该课程时也受益良多，对单纯形算法也钻研了比较长的时间，因此撰写本文，希望给大家一个学习参考！其中可能有错误之处，欢迎指正讨论。</p>
 
     </div>

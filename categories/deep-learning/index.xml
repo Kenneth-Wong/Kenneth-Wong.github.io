@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Kenneth</title>
+    <link>https://kennethwong.tech/categories/deep-learning/</link>
+      <atom:link href="https://kennethwong.tech/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Deep Learning</title>
+      <link>https://kennethwong.tech/categories/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Recurrent Neural Networks</title>
+      <link>https://kennethwong.tech/post/rnn/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/post/rnn/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

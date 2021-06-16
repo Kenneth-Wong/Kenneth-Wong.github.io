@@ -50,6 +50,16 @@
   <url>
     <loc>https://kennethwong.tech/zh/authors/kenneth-wong/</loc>
     <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/authors/kenneth-wong/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/zh/authors/kenneth-wong/"
+                />
   </url>
   
   <url>
@@ -103,8 +113,33 @@
   </url>
   
   <url>
+    <loc>https://kennethwong.tech/zh/tags/%E6%97%B6%E5%BA%8F%E5%BB%BA%E6%A8%A1/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kennethwong.tech/zh/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/zh/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/zh/post/rnn/</loc>
+    <lastmod>2021-06-04T18:12:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/post/rnn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/zh/post/rnn/"
+                />
   </url>
   
   <url>
