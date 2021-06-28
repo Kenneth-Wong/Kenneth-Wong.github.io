@@ -25,8 +25,10 @@
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/swin_transformer/swin.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Swin-Transformer作为一个适合与视觉任务，特别是适合稠密预测（检测、分割）的backbone而出现，它可以结合众多的检测方法。在此之前，有
-&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ViT&lt;/a&gt;
-以及它的改进工作提出的backbone，ViT需要大量数据预训练（JFT-300M），它的改进[DeiT][3]运用了一些训练策略使得可以在ImageNet-1K上预训练。ViT虽然取得令人振奋的效果，但是它本身其实并不适合作为密集视觉任务的backbone，因为它的低分辨率的特征图与平方计算复杂度。&lt;/p&gt;
+&lt;a href=&#34;https://arxiv.org/pdf/2010.11929.pdf&#34; title=&#34;AN IMAGE IS WORTH 16X16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE, ICLR 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ViT&lt;/a&gt;
+以及它的改进工作提出的backbone，ViT需要大量数据预训练（JFT-300M），它的改进
+&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DeiT&lt;/a&gt;
+运用了一些训练策略使得可以在ImageNet-1K上预训练。ViT虽然取得令人振奋的效果，但是它本身其实并不适合作为密集视觉任务的backbone，因为它的低分辨率的特征图与平方计算复杂度。&lt;/p&gt;
 &lt;h4 id=&#34;细节过程&#34;&gt;细节过程&lt;/h4&gt;
 &lt;div align=center&gt;
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/swin_transformer/swin_frwork.png&#34; alt=&#34;Swin Transformer基本结构&#34;&gt;&lt;/p&gt;
@@ -426,8 +428,10 @@ self.register_buffer(&amp;quot;relative_position_index&amp;quot;, relative_posit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;这里以&lt;code&gt;window_size=3&lt;/code&gt;为例，解释以下过程：首先生成$coords: 2\times3\times 3$，就是在一个$3\times 3$的窗口内，每个位置的$y,x$坐标，而&lt;code&gt;relative_coords&lt;/code&gt;为$2\times 9 \times 9$，就是9个点中，每个点的$y$或$x$与其他所有点的差值，比如$[0]
-&lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3&lt;/a&gt;
+&lt;p&gt;这里以&lt;code&gt;window_size=3&lt;/code&gt;为例，解释以下过程：首先生成$coords: 2\times3\times 3$，就是在一个$3\times 3$的窗口内，每个位置的$y,x$坐标，而&lt;code&gt;relative_coords&lt;/code&gt;为$2\times 9 \times 9$，就是9个点中，每个点的$y$或$x$与其他所有点的差值，比如$
+&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;0&lt;/a&gt;
+
+&lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt;
 $，表示3号点（第二行第一个点）与1号点（第一行第二个点）的$y$坐标的差值。然后变形，并让两个坐标分别加上$3-1=2$，是因为这些坐标值范围$[0,2]$，因此差值的最小值为-2，加上2后从0开始。最后让$y$坐标乘上$2\times 3-1=5$，应该是一个trick，调整差值范围。最后将两个维度的差值相加，得到&lt;code&gt;relative_position_index&lt;/code&gt;，$3^2\times 3^2$，为9个点之间两两之间的相对位置编码值，最后用来到&lt;code&gt;self.relative_position_bias_table&lt;/code&gt;中寻址，注意相对位置的最大值为$(2M-2)(2M-1)$，而这个table最多有$(2M-1)(2M-1)$行，因此保证可以寻址，得到了一组给多个head使用的相对位置编码信息，这个table是可训练的参数。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
