@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kenneth</title>
+    <link>https://kennethwong.tech/en/</link>
+      <atom:link href="https://kennethwong.tech/en/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kenneth</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Kenneth</title>
+      <link>https://kennethwong.tech/en/</link>
+    </image>
+    
+    <item>
+      <title>Swin Transformer</title>
+      <link>https://kennethwong.tech/en/post/swin_transformer/</link>
+      <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/post/swin_transformer/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version instead.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recurrent Neural Networks</title>
+      <link>https://kennethwong.tech/en/post/rnn/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/post/rnn/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simplex</title>
+      <link>https://kennethwong.tech/en/post/simplex/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/post/simplex/</guid>
+      <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
+      <link>https://kennethwong.tech/en/publication/eccv20/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/publication/eccv20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
+      <link>https://kennethwong.tech/en/publication/cvpr19/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/publication/cvpr19/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

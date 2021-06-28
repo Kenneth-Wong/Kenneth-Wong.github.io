@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-Hans">
 
 <head>
 
@@ -28,12 +28,12 @@
   
     
   
-  <meta name="description" content="TBD. Please read the Chinese version.">
+  <meta name="description" content="对于递归神经网络进行简要回顾和总结">
 
   
-  <link rel="alternate" hreflang="zh" href="https://kennethwong.tech/zh/post/rnn/">
+  <link rel="alternate" hreflang="en" href="https://kennethwong.tech/en/post/rnn/">
   
-  <link rel="alternate" hreflang="en-us" href="https://kennethwong.tech/post/rnn/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://kennethwong.tech/post/rnn/">
 
   
 
@@ -237,9 +237,9 @@
   
   <meta property="og:site_name" content="Kenneth">
   <meta property="og:url" content="https://kennethwong.tech/post/rnn/">
-  <meta property="og:title" content="Recurrent Neural Networks | Kenneth">
-  <meta property="og:description" content="TBD. Please read the Chinese version."><meta property="og:image" content="https://kennethwong.tech/post/rnn/featured.png">
-  <meta property="twitter:image" content="https://kennethwong.tech/post/rnn/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="递归神经网络 | Kenneth">
+  <meta property="og:description" content="对于递归神经网络进行简要回顾和总结"><meta property="og:image" content="https://kennethwong.tech/post/rnn/featured.png">
+  <meta property="twitter:image" content="https://kennethwong.tech/post/rnn/featured.png"><meta property="og:locale" content="zh-Hans">
   
     
       <meta property="article:published_time" content="2021-06-04T18:12:26&#43;08:00">
@@ -272,7 +272,7 @@
     "@type": "WebPage",
     "@id": "https://kennethwong.tech/post/rnn/"
   },
-  "headline": "Recurrent Neural Networks",
+  "headline": "递归神经网络",
   
   "image": [
     "https://kennethwong.tech/post/rnn/featured.png"
@@ -294,7 +294,7 @@
       "url": "img/https://kennethwong.tech"
     }
   },
-  "description": "TBD. Please read the Chinese version."
+  "description": "对于递归神经网络进行简要回顾和总结"
 }
 </script>
 
@@ -312,7 +312,7 @@
 
 
 
-  <title>Recurrent Neural Networks | Kenneth</title>
+  <title>递归神经网络 | Kenneth</title>
 
 </head>
 
@@ -324,7 +324,7 @@
 
       <div class="row no-gutters justify-content-between mb-3">
         <div class="col-6">
-          <h1>Search</h1>
+          <h1>搜索</h1>
         </div>
         <div class="col-6 col-search-close">
           <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
@@ -333,7 +333,7 @@
 
       <div id="search-box">
         
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
         autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
@@ -369,7 +369,7 @@
 
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
     <span><i class="fas fa-bars"></i></span>
     </button>
     
@@ -411,7 +411,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
+          <a class="nav-link " href="/#about"><span>主页</span></a>
         </li>
 
         
@@ -440,7 +440,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          <a class="nav-link " href="/#featured"><span>学术发表</span></a>
         </li>
 
         
@@ -469,7 +469,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          <a class="nav-link " href="/#posts"><span>博客文章</span></a>
         </li>
 
         
@@ -498,7 +498,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          <a class="nav-link " href="/#contact"><span>联系方式</span></a>
         </li>
 
         
@@ -526,15 +526,15 @@
       
       <li class="nav-item dropdown i18n-dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">English</span>
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">中文 (简体)</span>
         </a>
         <div class="dropdown-menu">
           <div class="dropdown-item i18n-active font-weight-bold">
-            <span>English</span>
+            <span>中文 (简体)</span>
           </div>
           
-          <a class="dropdown-item" href="https://kennethwong.tech/zh/post/rnn/">
-            <span>中文 (简体)</span>
+          <a class="dropdown-item" href="https://kennethwong.tech/en/post/rnn/">
+            <span>English</span>
           </a>
           
         </div>
@@ -575,7 +575,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Recurrent Neural Networks</h1>
+  <h1>递归神经网络</h1>
 
   
 
@@ -615,7 +615,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 分钟阅读时长
   </span>
   
 
@@ -627,7 +627,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/deep-learning/">Deep Learning</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="">深度学习</a></span>
   
 
 </div>
@@ -662,7 +662,124 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>TBD. Please read the Chinese version.</p>
+      <h2 id="1-rnn">1 RNN</h2>
+<p>人在阅读文字时，具有短暂的记忆，比如在阅读当前词汇时你会对之前的文字有一些印象，而不是全部丢弃前面的内容。对于神经网络，我们也需要这样的功能，即保持对之前内容的短暂记忆。而RNN递归神经网络提供了一种实现方法。</p>
+<p>最简单的RNN递归公式如下（其中$\hat{y}^{(t)}$是预测的概率向量，$y^{(t)}$是标量类别标签）：
+$$
+\begin{equation}
+\begin{split}
+h^{(t)}&amp;=\tanh(Ux^{(t)}+Wh^{(t-1)}+b) \cr
+o^{(t)}&amp;=Vh^{(t)}+c \cr
+\hat{y}^{(t)}&amp;=\mathrm{softmax}(o^{(t)})\cr
+L^{(t)}&amp;=-\log \hat{y}^{(t)}_{y_t}\cr
+L&amp;=\sum L^{(t)}
+\end{split}
+\end{equation}
+$$
+BPTT梯度回传算法：</p>
+<ul>
+<li>
+<p>​</p>
+</li>
+<li>
+<p>$$
+\nabla_{o_i^{(t)}}L=\nabla_{o_i^{(t)}} L^{(t)}=-\nabla_{o_i^{(t)}}\log \frac{\exp(o_{y^{(t)}}^{(t)})}{\sum_j\exp(o_j^{(t)})}=\hat{y}_i^{(t)}-\mathbf{l}{i=y^{(t)}}
+$$</p>
+</li>
+<li>
+<p>向量表示：
+$$
+\nabla_{o^{(t)}}L=\hat{\mathbf{y}}^{(t)}-\mathbf{y}^{(t)}
+$$
+其中$\mathbf{y}^{(t)}$是由标量标签扩展的one-hot向量。即总的损失对任意一个时刻的输出的导数都可以表示成上述形式。</p>
+</li>
+<li>
+<p>对最后一个时间$\tau$的导数：
+$$
+\nabla_{h^{(\tau)}}L=V^T\nabla_{o^{(\tau)}}L^{(t)}
+$$</p>
+</li>
+<li>
+<p>对于任意的$t&lt;\tau$，$h^{(t)}$接收两个方向回传的梯度：$h^{(t+1)}$和$o^{(t)}$。
+$$
+\begin{align}\nabla_{h^{(t)}}L &amp;=\left(\frac{\partial o^{(t)}}{\partial h^{(t)}}\right)^T\nabla_{o^{(t)}}L+\left(\frac{\partial h^{(t+1)}}{\partial h^{(t)}}\right)^T\nabla_{h^{(t+1)}}L \cr
+&amp;= V^T\nabla_{o^{(t)}}L + W^T\mathrm{diag}(1-(h^{(t+1)})^2)(\nabla_{h^{(t+1)}}L)\end{align}
+$$</p>
+</li>
+<li>
+<p>对参数的求导，因为所有时间步共享参数，因此需要对所有时间步累加导数。
+$$
+\begin{equation}
+\begin{split}
+\nabla_c L &amp;= \sum_t \nabla_{o^{(t)}} L \cr
+\nabla_b L&amp;=\sum_t \mathrm{diag}(1-(h^{(t)})^2)\nabla_{h^{(t)}}L \cr
+\nabla_V L &amp;= \sum_t (\nabla_{o^{(t)}}L) (h^{(t)})^T \cr
+\nabla_W L &amp;= \sum_t \mathrm{diag}(1-(h^{(t)})^2)(\nabla_{h^{(t)}}L) (h^{(t-1)})^T \cr
+\nabla_U L &amp;= \sum_t  \mathrm{diag}(1-(h^{(t)})^2)(\nabla_{h^{(t)}}L) (x^{(t)})^T
+\end{split}
+\end{equation}
+$$</p>
+</li>
+<li>
+<p>传统的RNN会有梯度消失问题，这是因为误差项累积相乘，也就是不能保持长期记忆。因此需要引入一些控制门缓解梯度消失，这样做会使得梯度误差项变成相加。</p>
+</li>
+</ul>
+<p>​</p>
+<h2 id="2-lstm">2 LSTM</h2>
+<p>LSTM的提出是希望改善RNN缺少长期记忆的缺点。RNN当时间步达到一定长度时，模型很可能会忘掉之前的记忆。首先来看一张形象的LSTM模型图：</p>
+<p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521165195.jpg" alt=""></p>
+ <div align="center">
+<p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521165219.jpg" alt=""></p>
+<p>​	</div></p>
+<p>首先，图中顶部贯穿的一条直线是每个胞元的内部状态$c_t$。三个sigmoid函数构成三个门：输入门，遗忘门，输出门。之所以叫“门”，是因为sigmoid能够将数值	归一化到（0，1）区间，当他和向量对应元素相乘时，能够决定这个向量的保留量。三个门的计算公式有相同的形式：
+$$
+\begin{equation}
+\begin{split}
+i&amp;=\sigma(U_ix_t+W_ih_{t-1})\cr
+f&amp;=\sigma(U_fx_t+W_fh_{t-1})\cr
+o&amp;=\sigma(U_ox_t+W_oh_{t-1})
+\end{split}
+\end{equation}
+$$
+上述公式有不同写法，比如，如果合并成一个矩阵写也可以：
+$$
+i=\sigma(W_i[x_t, h_{t-1}]+b_i)
+$$
+这与上面的式子是等价的，相当于将上面的$U_i$和$W_i$在1维度合并。</p>
+<p>当从一个胞元过度到下一个时，首先要确定要忘记多少之前的状态，即使用遗忘门来控制过去状态$c_{t-1}$的权重。</p>
+<p>然后，在当前状态，我们获得的新的知识需要计算，这种新的状态、输出状态一般用tanh激活函数，输出范围（-1，1），那么新的状态部分可以计算如下：
+$$
+\bar{c}_t=\tanh(U_cx_t+W_ch_{t-1})
+$$
+新状态使用输入门控制输入量，结合上面的遗忘门控制的旧状态占比，可计算出新的胞元状态：
+$$
+c_t=f * c_{t-1}+i*\bar{c}_t
+$$
+最后计算这个胞元的输出态，用输出门控制信息量：
+$$
+h_t=o_t*\tanh(c_t)
+$$</p>
+<div align="center">
+<p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521167732.jpg" alt=""></p>
+</div>
+<p>RNN时LSTM的特殊情况：当输入门全1，遗忘门全0（总是抛弃过去的记忆），输出门全1时，就是一个RNN。</p>
+<h2 id="3-gru">3 GRU</h2>
+<p>GRU将LSTM的输入门和遗忘门合并成一个更新门$z$，并且将细胞状态和输出状态合并。</p>
+<div align=center>
+<p><img src="https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/rnn/img_1521168305.jpg" alt=""></p>
+</div>
+<p>公式如下：
+$$
+\begin{equation}
+\begin{split}
+r_t&amp;=\sigma(U_rx_t+W_rh_{t-1})\cr
+z_t&amp;=\sigma(U_zx_t+W_zh_{t-1})\cr
+h_t&amp;=z_t*h_{t-1}+(1-z_t)\tanh(U_hx_t+W_h(r_t*h_{t-1}))
+\end{split}
+\end{equation}
+$$
+​</p>
+<p>​</p>
 
     </div>
 
@@ -674,7 +791,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/time-series-modeling/">Time Series Modeling</a>
+  <a class="badge badge-light" href="">时序建模</a>
   
 </div>
 
@@ -691,7 +808,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://kennethwong.tech/post/rnn/&amp;text=Recurrent%20Neural%20Networks" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://kennethwong.tech/post/rnn/&amp;text=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -704,7 +821,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://kennethwong.tech/post/rnn/&amp;t=Recurrent%20Neural%20Networks" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://kennethwong.tech/post/rnn/&amp;t=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -717,7 +834,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Recurrent%20Neural%20Networks&amp;body=https://kennethwong.tech/post/rnn/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c&amp;body=https://kennethwong.tech/post/rnn/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -730,7 +847,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://kennethwong.tech/post/rnn/&amp;title=Recurrent%20Neural%20Networks" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://kennethwong.tech/post/rnn/&amp;title=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -743,7 +860,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Recurrent%20Neural%20Networks%20https://kennethwong.tech/post/rnn/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%20https://kennethwong.tech/post/rnn/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -756,7 +873,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://kennethwong.tech/post/rnn/&amp;title=Recurrent%20Neural%20Networks" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://kennethwong.tech/post/rnn/&amp;title=%e9%80%92%e5%bd%92%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -863,12 +980,12 @@
     
     <script>
       const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const i18n = {"no_results":"没有找到结果","placeholder":"搜索...","results":"搜索结果"};
       const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
         };
     </script>
     
@@ -959,7 +1076,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
+        <h5 class="modal-title">引用</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -969,10 +1086,10 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
+          <i class="fas fa-copy"></i> 复制
         </a>
         <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
+          <i class="fas fa-download"></i> 下载
         </a>
         <div id="modal-error"></div>
       </div>

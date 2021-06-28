@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Kenneth</title>
+    <link>https://kennethwong.tech/en/publication/</link>
+      <atom:link href="https://kennethwong.tech/en/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Publications</title>
+      <link>https://kennethwong.tech/en/publication/</link>
+    </image>
+    
+    <item>
+      <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
+      <link>https://kennethwong.tech/en/publication/eccv20/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/publication/eccv20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
+      <link>https://kennethwong.tech/en/publication/cvpr19/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/publication/cvpr19/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

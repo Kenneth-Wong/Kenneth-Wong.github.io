@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Kenneth</title>
+    <link>https://kennethwong.tech/en/authors/</link>
+      <atom:link href="https://kennethwong.tech/en/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Authors</title>
+      <link>https://kennethwong.tech/en/authors/</link>
+    </image>
+    
+    <item>
+      <title>Kenneth Wong</title>
+      <link>https://kennethwong.tech/en/authors/kenneth-wong/</link>
+      <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/kenneth-wong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kenneth</title>
+      <link>https://kennethwong.tech/en/authors/kenneth/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/kenneth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruiping Wang</title>
+      <link>https://kennethwong.tech/en/authors/ruiping-wang/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/ruiping-wang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiguang Shan</title>
+      <link>https://kennethwong.tech/en/authors/shiguang-shan/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/shiguang-shan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wenbin Wang</title>
+      <link>https://kennethwong.tech/en/authors/wenbin-wang/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/wenbin-wang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xilin Chen</title>
+      <link>https://kennethwong.tech/en/authors/xilin-chen/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/authors/xilin-chen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kennethwong.tech/en/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kennethwong.tech/en/authors/admin/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Kenneth Wong&lt;/em&gt;, namely &lt;em&gt;Wenbin Wang&lt;/em&gt; (王文彬), is currently a fourth-year Ph.D. student in the 
+&lt;a href=&#34;http://vipl.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Key Lab. of Intelligent Information Processing (IIP)&lt;/a&gt;
+ at 
+&lt;a href=&#34;http://www.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS)&lt;/a&gt;
+, advised by Prof. 
+&lt;a href=&#34;http://vipl.ict.ac.cn/people/~xlchen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xilin Chen&lt;/a&gt;
+ and Prof. 
+&lt;a href=&#34;http://vipl.ict.ac.cn/homepage/rpwang/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ruiping Wang&lt;/a&gt;
+. His research interests include but not limited to 2D/3D scene underderstanding, object detection, scene graph generation, and image captioning. Before this, he received his B.Eng. degree in Computer Science and Technology as an  undergraduate student of 
+&lt;a href=&#34;https://www.nankai.edu.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nankai University&lt;/a&gt;
+ (NKU, 2013 - 2017).&lt;/p&gt;
+&lt;p&gt;“Those times when you get up early and you work hard; those times when you stay up late and you work hard; those times when don’t feel like working — you’re too tired, you don’t want to push yourself — but you do it anyway. That is actually the dream. That’s the dream.”&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

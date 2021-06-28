@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kenneth</title>
-    <link>https://kennethwong.tech/authors/kenneth/</link>
-      <atom:link href="https://kennethwong.tech/authors/kenneth/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/kenneth/</link>
+      <atom:link href="/authors/kenneth/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth</title>
-      <link>https://kennethwong.tech/authors/kenneth/</link>
+      <link>/authors/kenneth/</link>
     </image>
     
     <item>
       <title>Simplex</title>
-      <link>https://kennethwong.tech/post/simplex/</link>
+      <link>/post/simplex/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>https://kennethwong.tech/post/simplex/</guid>
+      <guid>/post/simplex/</guid>
       <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
 </description>
     </item>
