@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kennethwong.tech/en/publication_types/1/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/publication_types/1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/publication_types/1/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kennethwong.tech/en/authors/</loc>
-    <lastmod>2021-06-27T21:57:34+08:00</lastmod>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -14,6 +29,111 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kennethwong.tech/en/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/publication_types/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/publication/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/authors/ruiping-wang/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/authors/ruiping-wang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/authors/ruiping-wang/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/publication/iccv21/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/publication/iccv21/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/publication/iccv21/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/authors/wenbin-wang/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/authors/wenbin-wang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/authors/wenbin-wang/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kennethwong.tech/en/authors/xilin-chen/</loc>
+    <lastmod>2021-07-23T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://kennethwong.tech/authors/xilin-chen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kennethwong.tech/en/authors/xilin-chen/"
                 />
   </url>
   
@@ -35,21 +155,6 @@
   <url>
     <loc>https://kennethwong.tech/en/categories/deep-learning/</loc>
     <lastmod>2021-06-27T21:57:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/</loc>
-    <lastmod>2021-06-27T21:57:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/"
-                />
   </url>
   
   <url>
@@ -173,66 +278,6 @@
   </url>
   
   <url>
-    <loc>https://kennethwong.tech/en/publication_types/1/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/publication_types/1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/publication_types/1/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/publication_types/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/publication_types/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/publication/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/publication/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/authors/ruiping-wang/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/authors/ruiping-wang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/authors/ruiping-wang/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kennethwong.tech/en/authors/shiguang-shan/</loc>
     <lastmod>2020-07-03T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -259,36 +304,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kennethwong.tech/en/publication/eccv20/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/authors/wenbin-wang/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/authors/wenbin-wang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/authors/wenbin-wang/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kennethwong.tech/en/authors/xilin-chen/</loc>
-    <lastmod>2020-07-03T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kennethwong.tech/authors/xilin-chen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kennethwong.tech/en/authors/xilin-chen/"
                 />
   </url>
   

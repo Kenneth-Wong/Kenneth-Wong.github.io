@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/en/authors/wenbin-wang/</link>
       <atom:link href="https://kennethwong.tech/en/authors/wenbin-wang/index.xml" rel="self" type="application/rss+xml" />
     <description>Wenbin Wang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Wenbin Wang</title>
       <link>https://kennethwong.tech/en/authors/wenbin-wang/</link>
     </image>
+    
+    <item>
+      <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>
+      <link>https://kennethwong.tech/en/publication/iccv21/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/en/publication/iccv21/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>

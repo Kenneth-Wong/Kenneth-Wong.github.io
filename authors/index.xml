@@ -5,12 +5,36 @@
     <link>https://kennethwong.tech/authors/</link>
       <atom:link href="https://kennethwong.tech/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
       <link>https://kennethwong.tech/authors/</link>
     </image>
+    
+    <item>
+      <title>Ruiping Wang</title>
+      <link>https://kennethwong.tech/authors/ruiping-wang/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/authors/ruiping-wang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wenbin Wang</title>
+      <link>https://kennethwong.tech/authors/wenbin-wang/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/authors/wenbin-wang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xilin Chen</title>
+      <link>https://kennethwong.tech/authors/xilin-chen/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/authors/xilin-chen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Kenneth Wong</title>
@@ -21,34 +45,10 @@
     </item>
     
     <item>
-      <title>Ruiping Wang</title>
-      <link>https://kennethwong.tech/authors/ruiping-wang/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/authors/ruiping-wang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Shiguang Shan</title>
       <link>https://kennethwong.tech/authors/shiguang-shan/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
       <guid>https://kennethwong.tech/authors/shiguang-shan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wenbin Wang</title>
-      <link>https://kennethwong.tech/authors/wenbin-wang/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/authors/wenbin-wang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xilin Chen</title>
-      <link>https://kennethwong.tech/authors/xilin-chen/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/authors/xilin-chen/</guid>
       <description></description>
     </item>
     

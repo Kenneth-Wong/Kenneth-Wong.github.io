@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/</link>
       <atom:link href="https://kennethwong.tech/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth</title>
       <link>https://kennethwong.tech/</link>
     </image>
+    
+    <item>
+      <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>
+      <link>https://kennethwong.tech/publication/iccv21/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/publication/iccv21/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Swin Transformer 解析</title>
