@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>最优化方法 | Kenneth</title>
-    <link>https://kennethwong.tech/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</link>
-      <atom:link href="https://kennethwong.tech/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</link>
+      <atom:link href="/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <description>最优化方法</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 04 Jun 2021 18:12:26 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>最优化方法</title>
-      <link>https://kennethwong.tech/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</link>
+      <link>/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</link>
     </image>
     
     <item>
       <title>单纯形算法</title>
-      <link>https://kennethwong.tech/post/simplex/</link>
+      <link>/post/simplex/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>https://kennethwong.tech/post/simplex/</guid>
+      <guid>/post/simplex/</guid>
       <description>&lt;p&gt;中学课程里，我们都简单地接触过线性规划，那时候一般都是分析每个约束，在二维平面上画出直线，得到可行域，然后以固定斜率作出目标函数直线，在可行域内移动直线，在y轴上的截距就是最优解。而往往最优解的地方是通过（凸）可行域的顶点。就像下面这个例子：
 $$
 \begin{equation}

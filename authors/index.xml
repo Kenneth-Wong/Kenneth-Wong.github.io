@@ -5,7 +5,7 @@
     <link>https://kennethwong.tech/authors/</link>
       <atom:link href="https://kennethwong.tech/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Ruiping Wang</title>
       <link>https://kennethwong.tech/authors/ruiping-wang/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
       <guid>https://kennethwong.tech/authors/ruiping-wang/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Wenbin Wang</title>
       <link>https://kennethwong.tech/authors/wenbin-wang/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
       <guid>https://kennethwong.tech/authors/wenbin-wang/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>Xilin Chen</title>
       <link>https://kennethwong.tech/authors/xilin-chen/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
       <guid>https://kennethwong.tech/authors/xilin-chen/</guid>
       <description></description>
     </item>
@@ -41,6 +41,14 @@
       <link>https://kennethwong.tech/authors/kenneth-wong/</link>
       <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
       <guid>https://kennethwong.tech/authors/kenneth-wong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kenneth</title>
+      <link>https://kennethwong.tech/authors/kenneth/</link>
+      <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
+      <guid>https://kennethwong.tech/authors/kenneth/</guid>
       <description></description>
     </item>
     
@@ -57,17 +65,17 @@
       <link>https://kennethwong.tech/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/authors/admin/</guid>
-      <description>&lt;p&gt;王文彬（Kenneth Wong）目前是中国科学院计算技术研究所智能信息处理重点实验室视觉研究组（
-&lt;a href=&#34;http://vipl.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VIPL&lt;/a&gt;
-）一名五年级的博士研究生，指导老师为
-&lt;a href=&#34;http://vipl.ict.ac.cn/people/~xlchen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;陈熙霖&lt;/a&gt;
-研究员和
-&lt;a href=&#34;http://vipl.ict.ac.cn/homepage/rpwang/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;王瑞平&lt;/a&gt;
-研究员. 他的研究方向包括但不限于2D/3D场景理解、物体检测、场景图生成以及图像标题生成。在此之前（2013-2017），他在
-&lt;a href=&#34;https://cc.nankai.edu.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;南开大学计算机与控制工程学院&lt;/a&gt;
-获得工程学士学位（计算机科学与技术专业）。&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 下载我的 &lt;a href=&#34;https://kennethwong.tech/files/cv-zh.pdf&#34; target=&#34;_blank&#34;&gt;简历&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;Kenneth Wong&lt;/em&gt;, namely &lt;em&gt;Wenbin Wang&lt;/em&gt; (王文彬), is currently a final-year Ph.D. student in the 
+&lt;a href=&#34;http://vipl.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Key Lab. of Intelligent Information Processing (IIP)&lt;/a&gt;
+ at 
+&lt;a href=&#34;http://www.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS)&lt;/a&gt;
+, advised by Prof. 
+&lt;a href=&#34;http://vipl.ict.ac.cn/people/~xlchen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xilin Chen&lt;/a&gt;
+ and Prof. 
+&lt;a href=&#34;http://vipl.ict.ac.cn/homepage/rpwang/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ruiping Wang&lt;/a&gt;
+. His research interests include but not limited to 2D/3D scene understanding, object detection, scene graph generation, and image captioning. Before this, he received his B.Eng. degree in Computer Science and Technology as an  undergraduate student of 
+&lt;a href=&#34;https://www.nankai.edu.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nankai University&lt;/a&gt;
+ (NKU, 2013 - 2017).&lt;/p&gt;
 &lt;p&gt;“Those times when you get up early and you work hard; those times when you stay up late and you work hard; those times when don’t feel like working — you’re too tired, you don’t want to push yourself — but you do it anyway. That is actually the dream. That’s the dream.”&lt;/p&gt;
 </description>
     </item>

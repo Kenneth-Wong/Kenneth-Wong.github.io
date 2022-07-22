@@ -2,65 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kenneth</title>
-    <link>https://kennethwong.tech/en/</link>
-      <atom:link href="https://kennethwong.tech/en/index.xml" rel="self" type="application/rss+xml" />
+    <link>/en/</link>
+      <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth</title>
-      <link>https://kennethwong.tech/en/</link>
+      <link>/en/</link>
     </image>
     
     <item>
+      <title>Balanced Scene Graph Generation Assisted by Additional Biased Predictor</title>
+      <link>/en/publication/ssi22/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>/en/publication/ssi22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>
-      <link>https://kennethwong.tech/en/publication/iccv21/</link>
+      <link>/en/publication/iccv21/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/iccv21/</guid>
+      <guid>/en/publication/iccv21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swin Transformer</title>
-      <link>https://kennethwong.tech/en/post/swin_transformer/</link>
+      <link>/en/post/swin_transformer/</link>
       <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/post/swin_transformer/</guid>
+      <guid>/en/post/swin_transformer/</guid>
       <description>&lt;p&gt;TBD. Please read the Chinese version instead.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Recurrent Neural Networks</title>
-      <link>https://kennethwong.tech/en/post/rnn/</link>
+      <link>/en/post/rnn/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/post/rnn/</guid>
+      <guid>/en/post/rnn/</guid>
       <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Simplex</title>
-      <link>https://kennethwong.tech/en/post/simplex/</link>
+      <link>/en/post/simplex/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/post/simplex/</guid>
+      <guid>/en/post/simplex/</guid>
       <description>&lt;p&gt;TBD. Please read the Chinese version.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
-      <link>https://kennethwong.tech/en/publication/eccv20/</link>
+      <link>/en/publication/eccv20/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/eccv20/</guid>
+      <guid>/en/publication/eccv20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
-      <link>https://kennethwong.tech/en/publication/cvpr19/</link>
+      <link>/en/publication/cvpr19/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/cvpr19/</guid>
+      <guid>/en/publication/cvpr19/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/en/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/en/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/en/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/en/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

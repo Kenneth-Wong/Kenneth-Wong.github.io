@@ -5,12 +5,20 @@
     <link>https://kennethwong.tech/authors/ruiping-wang/</link>
       <atom:link href="https://kennethwong.tech/authors/ruiping-wang/index.xml" rel="self" type="application/rss+xml" />
     <description>Ruiping Wang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Ruiping Wang</title>
       <link>https://kennethwong.tech/authors/ruiping-wang/</link>
     </image>
+    
+    <item>
+      <title>Balanced Scene Graph Generation Assisted by Additional Biased Predictor</title>
+      <link>https://kennethwong.tech/publication/ssi22/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/publication/ssi22/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>

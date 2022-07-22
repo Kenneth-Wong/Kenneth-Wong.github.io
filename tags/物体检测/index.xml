@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>物体检测 | Kenneth</title>
-    <link>https://kennethwong.tech/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/</link>
-      <atom:link href="https://kennethwong.tech/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/</link>
+      <atom:link href="/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
     <description>物体检测</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>物体检测</title>
-      <link>https://kennethwong.tech/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/</link>
+      <link>/tags/%E7%89%A9%E4%BD%93%E6%A3%80%E6%B5%8B/</link>
     </image>
     
     <item>
       <title>Swin Transformer 解析</title>
-      <link>https://kennethwong.tech/post/swin_transformer/</link>
+      <link>/post/swin_transformer/</link>
       <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
-      <guid>https://kennethwong.tech/post/swin_transformer/</guid>
+      <guid>/post/swin_transformer/</guid>
       <description>&lt;h3 id=&#34;swin-transformer1&#34;&gt;
 &lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Swin-Transformer&lt;/a&gt;
 &lt;/h3&gt;

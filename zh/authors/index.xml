@@ -2,64 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Kenneth</title>
-    <link>/zh/authors/</link>
-      <atom:link href="/zh/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kennethwong.tech/zh/authors/</link>
+      <atom:link href="https://kennethwong.tech/zh/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
-      <link>/zh/authors/</link>
+      <link>https://kennethwong.tech/zh/authors/</link>
     </image>
     
     <item>
-      <title>Kenneth Wong</title>
-      <link>/zh/authors/kenneth-wong/</link>
-      <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
-      <guid>/zh/authors/kenneth-wong/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ruiping Wang</title>
-      <link>/zh/authors/ruiping-wang/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>/zh/authors/ruiping-wang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shiguang Shan</title>
-      <link>/zh/authors/shiguang-shan/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>/zh/authors/shiguang-shan/</guid>
+      <link>https://kennethwong.tech/zh/authors/ruiping-wang/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/zh/authors/ruiping-wang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wenbin Wang</title>
-      <link>/zh/authors/wenbin-wang/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>/zh/authors/wenbin-wang/</guid>
+      <link>https://kennethwong.tech/zh/authors/wenbin-wang/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/zh/authors/wenbin-wang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xilin Chen</title>
-      <link>/zh/authors/xilin-chen/</link>
+      <link>https://kennethwong.tech/zh/authors/xilin-chen/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <guid>https://kennethwong.tech/zh/authors/xilin-chen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kenneth Wong</title>
+      <link>https://kennethwong.tech/zh/authors/kenneth-wong/</link>
+      <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
+      <guid>https://kennethwong.tech/zh/authors/kenneth-wong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiguang Shan</title>
+      <link>https://kennethwong.tech/zh/authors/shiguang-shan/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>/zh/authors/xilin-chen/</guid>
+      <guid>https://kennethwong.tech/zh/authors/shiguang-shan/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/zh/authors/admin/</link>
+      <link>https://kennethwong.tech/zh/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/zh/authors/admin/</guid>
+      <guid>https://kennethwong.tech/zh/authors/admin/</guid>
       <description>&lt;p&gt;王文彬（Kenneth Wong）目前是中国科学院计算技术研究所智能信息处理重点实验室视觉研究组（
 &lt;a href=&#34;http://vipl.ict.ac.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VIPL&lt;/a&gt;
-）一名四年级的博士研究生，指导老师为
+）一名五年级的博士研究生，指导老师为
 &lt;a href=&#34;http://vipl.ict.ac.cn/people/~xlchen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;陈熙霖&lt;/a&gt;
 研究员和
 &lt;a href=&#34;http://vipl.ict.ac.cn/homepage/rpwang/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;王瑞平&lt;/a&gt;
@@ -67,7 +67,7 @@
 &lt;a href=&#34;https://cc.nankai.edu.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;南开大学计算机与控制工程学院&lt;/a&gt;
 获得工程学士学位（计算机科学与技术专业）。&lt;/p&gt;
 &lt;p&gt;
-  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 下载我的 &lt;a href=&#34;/files/cv-zh.pdf&#34; target=&#34;_blank&#34;&gt;简历&lt;/a&gt;.&lt;/p&gt;
+  &lt;i class=&#34;fas fa-download  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 下载我的 &lt;a href=&#34;https://kennethwong.tech/files/cv-zh.pdf&#34; target=&#34;_blank&#34;&gt;简历&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;“Those times when you get up early and you work hard; those times when you stay up late and you work hard; those times when don’t feel like working — you’re too tired, you don’t want to push yourself — but you do it anyway. That is actually the dream. That’s the dream.”&lt;/p&gt;
 </description>
     </item>

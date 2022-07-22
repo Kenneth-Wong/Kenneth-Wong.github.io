@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kenneth Wong | Kenneth</title>
-    <link>/zh/authors/kenneth-wong/</link>
-      <atom:link href="/zh/authors/kenneth-wong/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kennethwong.tech/zh/authors/kenneth-wong/</link>
+      <atom:link href="https://kennethwong.tech/zh/authors/kenneth-wong/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth Wong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2021 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth Wong</title>
-      <link>/zh/authors/kenneth-wong/</link>
+      <link>https://kennethwong.tech/zh/authors/kenneth-wong/</link>
     </image>
     
     <item>
       <title>Swin Transformer 解析</title>
-      <link>/zh/post/swin_transformer/</link>
+      <link>https://kennethwong.tech/zh/post/swin_transformer/</link>
       <pubDate>Sun, 27 Jun 2021 21:57:34 +0800</pubDate>
-      <guid>/zh/post/swin_transformer/</guid>
+      <guid>https://kennethwong.tech/zh/post/swin_transformer/</guid>
       <description>&lt;h3 id=&#34;swin-transformer1&#34;&gt;
 &lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Swin-Transformer&lt;/a&gt;
 &lt;/h3&gt;
@@ -25,8 +25,10 @@
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/swin_transformer/swin.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Swin-Transformer作为一个适合与视觉任务，特别是适合稠密预测（检测、分割）的backbone而出现，它可以结合众多的检测方法。在此之前，有
-&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ViT&lt;/a&gt;
-以及它的改进工作提出的backbone，ViT需要大量数据预训练（JFT-300M），它的改进[DeiT][3]运用了一些训练策略使得可以在ImageNet-1K上预训练。ViT虽然取得令人振奋的效果，但是它本身其实并不适合作为密集视觉任务的backbone，因为它的低分辨率的特征图与平方计算复杂度。&lt;/p&gt;
+&lt;a href=&#34;https://arxiv.org/pdf/2010.11929.pdf&#34; title=&#34;AN IMAGE IS WORTH 16X16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE, ICLR 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ViT&lt;/a&gt;
+以及它的改进工作提出的backbone，ViT需要大量数据预训练（JFT-300M），它的改进
+&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DeiT&lt;/a&gt;
+运用了一些训练策略使得可以在ImageNet-1K上预训练。ViT虽然取得令人振奋的效果，但是它本身其实并不适合作为密集视觉任务的backbone，因为它的低分辨率的特征图与平方计算复杂度。&lt;/p&gt;
 &lt;h4 id=&#34;细节过程&#34;&gt;细节过程&lt;/h4&gt;
 &lt;div align=center&gt;
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/swin_transformer/swin_frwork.png&#34; alt=&#34;Swin Transformer基本结构&#34;&gt;&lt;/p&gt;
@@ -426,8 +428,10 @@ self.register_buffer(&amp;quot;relative_position_index&amp;quot;, relative_posit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;这里以&lt;code&gt;window_size=3&lt;/code&gt;为例，解释以下过程：首先生成$coords: 2\times3\times 3$，就是在一个$3\times 3$的窗口内，每个位置的$y,x$坐标，而&lt;code&gt;relative_coords&lt;/code&gt;为$2\times 9 \times 9$，就是9个点中，每个点的$y$或$x$与其他所有点的差值，比如$[0]
-&lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3&lt;/a&gt;
+&lt;p&gt;这里以&lt;code&gt;window_size=3&lt;/code&gt;为例，解释以下过程：首先生成$coords: 2\times3\times 3$，就是在一个$3\times 3$的窗口内，每个位置的$y,x$坐标，而&lt;code&gt;relative_coords&lt;/code&gt;为$2\times 9 \times 9$，就是9个点中，每个点的$y$或$x$与其他所有点的差值，比如$
+&lt;a href=&#34;https://arxiv.org/pdf/2012.12877.pdf&#34; title=&#34;Training data-efficient image transformers and distillation through attention, 2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;0&lt;/a&gt;
+
+&lt;a href=&#34;https://arxiv.org/pdf/2103.14030v1.pdf&#34; title=&#34;Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, arXiv 2021.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt;
 $，表示3号点（第二行第一个点）与1号点（第一行第二个点）的$y$坐标的差值。然后变形，并让两个坐标分别加上$3-1=2$，是因为这些坐标值范围$[0,2]$，因此差值的最小值为-2，加上2后从0开始。最后让$y$坐标乘上$2\times 3-1=5$，应该是一个trick，调整差值范围。最后将两个维度的差值相加，得到&lt;code&gt;relative_position_index&lt;/code&gt;，$3^2\times 3^2$，为9个点之间两两之间的相对位置编码值，最后用来到&lt;code&gt;self.relative_position_bias_table&lt;/code&gt;中寻址，注意相对位置的最大值为$(2M-2)(2M-1)$，而这个table最多有$(2M-1)(2M-1)$行，因此保证可以寻址，得到了一组给多个head使用的相对位置编码信息，这个table是可训练的参数。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -529,9 +533,9 @@ $，表示3号点（第二行第一个点）与1号点（第一行第二个点�
     
     <item>
       <title>单纯形算法</title>
-      <link>/zh/post/simplex/</link>
+      <link>https://kennethwong.tech/zh/post/simplex/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>/zh/post/simplex/</guid>
+      <guid>https://kennethwong.tech/zh/post/simplex/</guid>
       <description>&lt;p&gt;中学课程里，我们都简单地接触过线性规划，那时候一般都是分析每个约束，在二维平面上画出直线，得到可行域，然后以固定斜率作出目标函数直线，在可行域内移动直线，在y轴上的截距就是最优解。而往往最优解的地方是通过（凸）可行域的顶点。就像下面这个例子：
 $$
 \begin{equation}
@@ -665,9 +669,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>递归神经网络</title>
-      <link>/zh/post/rnn/</link>
+      <link>https://kennethwong.tech/zh/post/rnn/</link>
       <pubDate>Fri, 04 Jun 2021 18:12:26 +0800</pubDate>
-      <guid>/zh/post/rnn/</guid>
+      <guid>https://kennethwong.tech/zh/post/rnn/</guid>
       <description>&lt;h2 id=&#34;1-rnn&#34;&gt;1 RNN&lt;/h2&gt;
 &lt;p&gt;人在阅读文字时，具有短暂的记忆，比如在阅读当前词汇时你会对之前的文字有一些印象，而不是全部丢弃前面的内容。对于神经网络，我们也需要这样的功能，即保持对之前内容的短暂记忆。而RNN递归神经网络提供了一种实现方法。&lt;/p&gt;
 &lt;p&gt;最简单的RNN递归公式如下（其中$\hat{y}^{(t)}$是预测的概率向量，$y^{(t)}$是标量类别标签）：

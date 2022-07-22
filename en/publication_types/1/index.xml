@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | Kenneth</title>
-    <link>https://kennethwong.tech/en/publication_types/1/</link>
-      <atom:link href="https://kennethwong.tech/en/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>/en/publication_types/1/</link>
+      <atom:link href="/en/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>1</title>
-      <link>https://kennethwong.tech/en/publication_types/1/</link>
+      <link>/en/publication_types/1/</link>
     </image>
     
     <item>
       <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>
-      <link>https://kennethwong.tech/en/publication/iccv21/</link>
+      <link>/en/publication/iccv21/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/iccv21/</guid>
+      <guid>/en/publication/iccv21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
-      <link>https://kennethwong.tech/en/publication/eccv20/</link>
+      <link>/en/publication/eccv20/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/eccv20/</guid>
+      <guid>/en/publication/eccv20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
-      <link>https://kennethwong.tech/en/publication/cvpr19/</link>
+      <link>/en/publication/cvpr19/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
-      <guid>https://kennethwong.tech/en/publication/cvpr19/</guid>
+      <guid>/en/publication/cvpr19/</guid>
       <description></description>
     </item>
     
