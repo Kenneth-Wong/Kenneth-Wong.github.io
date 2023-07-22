@@ -5,7 +5,7 @@
     <link>https://kennethwong.tech/zh/authors/ruiping-wang/</link>
       <atom:link href="https://kennethwong.tech/zh/authors/ruiping-wang/index.xml" rel="self" type="application/rss+xml" />
     <description>Ruiping Wang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2023 All rights reserved.</copyright><lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Ruiping Wang</title>
@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>Importance First: Generating Scene Graph of Human Interest</title>
+      <link>https://kennethwong.tech/zh/publication/ijcv23/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://kennethwong.tech/zh/publication/ijcv23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>附加偏见预测器辅助的均衡化场景图生成</title>
       <link>https://kennethwong.tech/zh/publication/ssi22/</link>
-      <pubDate>Mon, 18 Jul 2022 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/zh/publication/ssi22/</guid>
       <description></description>
     </item>
@@ -23,7 +31,7 @@
     <item>
       <title>Topic Scene Graph Generation by Attention Distillation from Caption</title>
       <link>https://kennethwong.tech/zh/publication/iccv21/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/zh/publication/iccv21/</guid>
       <description></description>
     </item>
@@ -31,7 +39,7 @@
     <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
       <link>https://kennethwong.tech/zh/publication/eccv20/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/zh/publication/eccv20/</guid>
       <description></description>
     </item>
@@ -39,7 +47,7 @@
     <item>
       <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
       <link>https://kennethwong.tech/zh/publication/cvpr19/</link>
-      <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/zh/publication/cvpr19/</guid>
       <description></description>
     </item>

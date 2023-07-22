@@ -5,7 +5,7 @@
     <link>https://kennethwong.tech/authors/shiguang-shan/</link>
       <atom:link href="https://kennethwong.tech/authors/shiguang-shan/index.xml" rel="self" type="application/rss+xml" />
     <description>Shiguang Shan</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 All rights reserved.</copyright><lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Shiguang Shan</title>
@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>Importance First: Generating Scene Graph of Human Interest</title>
+      <link>https://kennethwong.tech/publication/ijcv23/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://kennethwong.tech/publication/ijcv23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sketching Image Gist: Human-Mimetic Hierarchical Scene Graph Generation</title>
       <link>https://kennethwong.tech/publication/eccv20/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/publication/eccv20/</guid>
       <description></description>
     </item>
@@ -23,7 +31,7 @@
     <item>
       <title>Exploring Context and Visual Pattern of Relationship for Scene Graph Generation</title>
       <link>https://kennethwong.tech/publication/cvpr19/</link>
-      <pubDate>Sat, 15 Jun 2019 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
       <guid>https://kennethwong.tech/publication/cvpr19/</guid>
       <description></description>
     </item>

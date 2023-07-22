@@ -5,7 +5,7 @@
     <link>https://kennethwong.tech/zh/authors/kenneth-wong/</link>
       <atom:link href="https://kennethwong.tech/zh/authors/kenneth-wong/index.xml" rel="self" type="application/rss+xml" />
     <description>Kenneth Wong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2022 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hans</language><copyright>© 2023 All rights reserved.</copyright><lastBuildDate>Sun, 27 Jun 2021 21:57:34 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Kenneth Wong</title>
@@ -144,16 +144,16 @@
         self.patch_size = patch_size
         self.patches_resolution = patches_resolution
         self.num_patches = patches_resolution[0] * patches_resolution[1]
-  
+
         self.in_chans = in_chans
         self.embed_dim = embed_dim
-  
+
         self.proj = nn.Conv2d(in_chans, embed_dim, kernel_size=patch_size, stride=patch_size)
         if norm_layer is not None:
             self.norm = norm_layer(embed_dim)
         else:
             self.norm = None
-  
+
     def forward(self, x):
         B, C, H, W = x.shape
         # FIXME look at relaxing size constraints
@@ -326,18 +326,18 @@
 &lt;p&gt;&lt;code&gt;WindowAttention&lt;/code&gt;代码如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;class WindowAttention(nn.Module):
     def __init__(self, dim, window_size, num_heads, qkv_bias=True, qk_scale=None, attn_drop=0., proj_drop=0.):
-    
+
         super().__init__()
         self.dim = dim
         self.window_size = window_size  # Wh, Ww
         self.num_heads = num_heads
         head_dim = dim // num_heads
         self.scale = qk_scale or head_dim ** -0.5
-    
+
         # define a parameter table of relative position bias
         self.relative_position_bias_table = nn.Parameter(
             torch.zeros((2 * window_size[0] - 1) * (2 * window_size[1] - 1), num_heads))  # 2*Wh-1 * 2*Ww-1, nH
-    
+
         # get pair-wise relative position index for each token inside the window
         coords_h = torch.arange(self.window_size[0])
         coords_w = torch.arange(self.window_size[1])
@@ -350,15 +350,15 @@
         relative_coords[:, :, 0] *= 2 * self.window_size[1] - 1
         relative_position_index = relative_coords.sum(-1)  # Wh*Ww, Wh*Ww
         self.register_buffer(&amp;quot;relative_position_index&amp;quot;, relative_position_index)
-    
+
         self.qkv = nn.Linear(dim, dim * 3, bias=qkv_bias)
         self.attn_drop = nn.Dropout(attn_drop)
         self.proj = nn.Linear(dim, dim)
         self.proj_drop = nn.Dropout(proj_drop)
-    
+
         trunc_normal_(self.relative_position_bias_table, std=.02)
         self.softmax = nn.Softmax(dim=-1)
-    
+
     def forward(self, x, mask=None):
         &amp;quot;&amp;quot;&amp;quot;
         Args:
@@ -368,15 +368,15 @@
         B_, N, C = x.shape
         qkv = self.qkv(x).reshape(B_, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
         q, k, v = qkv[0], qkv[1], qkv[2]  # make torchscript happy (cannot use tensor as tuple)
-    
+
         q = q * self.scale
         attn = (q @ k.transpose(-2, -1))
-    
+
         relative_position_bias = self.relative_position_bias_table[self.relative_position_index.view(-1)].view(
             self.window_size[0] * self.window_size[1], self.window_size[0] * self.window_size[1], -1)  # Wh*Ww,Wh*Ww,nH
         relative_position_bias = relative_position_bias.permute(2, 0, 1).contiguous()  # nH, Wh*Ww, Wh*Ww
         attn = attn + relative_position_bias.unsqueeze(0)
-    
+
         if mask is not None:
             nW = mask.shape[0]
             attn = attn.view(B_ // nW, nW, self.num_heads, N, N) + mask.unsqueeze(1).unsqueeze(0)
@@ -384,9 +384,9 @@
             attn = self.softmax(attn)
         else:
             attn = self.softmax(attn)
-    
+
         attn = self.attn_drop(attn)
-    
+
         x = (attn @ v).transpose(1, 2).reshape(B_, N, C)
         x = self.proj(x)
         x = self.proj_drop(x)
@@ -412,7 +412,7 @@
 &lt;p&gt;代码如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;self.relative_position_bias_table = nn.Parameter(
             torch.zeros((2 * window_size[0] - 1) * (2 * window_size[1] - 1), num_heads))  # 2*Wh-1 * 2*Ww-1, nH
-      
+
 # get pair-wise relative position index for each token inside the window
 coords_h = torch.arange(self.window_size[0])
 coords_w = torch.arange(self.window_size[1])
@@ -576,7 +576,7 @@ $$&lt;/p&gt;
 &lt;p&gt;下面要说明的就是这样一个定理：对于可行域方程组$\mathbf{Ax=b}​$，该方程确定的凸多边形的任意一个顶点对应$\mathbf{A}​$的一组基。&lt;/p&gt;
 &lt;h3 id=&#34;21-顶点对应一组基&#34;&gt;2.1 顶点对应一组基&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/img_1518534807.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;上面这个例子是松弛形式的约束，原来的变量有三个，加上后面4个后变成等式，形成的可行域如上图所示。我们取一个顶点（0，2，0）分析，代入约束中，可以算出一个完整解$x=(0，2，0，2，2，3，0)$。取出矩阵$\mathbf{A}$中对应的$x$不为0的列，即图中标蓝的几列（用$\mathbf{a}_2$，$\mathbf{a}_4$，$\mathbf{a}_5$，$\mathbf{a}_6$表示），那么这几列就是线线性无关的，考虑$m&amp;lt;n$（约束数目小于松弛后的变量个数），那么自由解有$n-m$维，因此挑出来的列必有$m$个，构成一组基。下面主要说明他们为什么线性无关。假设他们线性相关，即存在一组$\lambda\neq\mathbf{0}$，使得$\lambda_2\mathbf{a}_2+\lambda_4\mathbf{a}_4+\lambda_5\mathbf{a}_5+\lambda_6\mathbf{a}_6=0$，也就是说，可以构造$\lambda=[0, \lambda_2, 0, \lambda_4, \lambda_5, \lambda_6, 0]$，使得$\mathbf{A}\lambda=0$。那么还可以再构造两个异于$x$的解：$x&#39;=x+\theta\lambda$和$x^{&#39;&#39;}=x-\theta\lambda$。他们都满足$\mathbf{Ax=b}$。并且可以通过控制$\theta$取很小的正值，使得这两个解满足都大于0的约束。由此这两个解都在凸多面体内，并且有$x=\frac{1}{2}(x&#39;+x^{&#39;&#39;})$，但是这是有问题的，因为一个凸多面体的顶点是不能被内部点线性表示的，因此这几列是构成一组基的。&lt;/p&gt;
+&lt;p&gt;上面这个例子是松弛形式的约束，原来的变量有三个，加上后面4个后变成等式，形成的可行域如上图所示。我们取一个顶点（0，2，0）分析，代入约束中，可以算出一个完整解$x=(0，2，0，2，2，3，0)$。取出矩阵$\mathbf{A}$中对应的$x$不为0的列，即图中标蓝的几列（用$\mathbf{a}_2$，$\mathbf{a}_4$，$\mathbf{a}_5$，$\mathbf{a}_6$表示），那么这几列就是线线性无关的，考虑$m&amp;lt;n$（约束数目小于松弛后的变量个数），那么自由解有$n-m$维，因此挑出来的列必有$m$个，构成一组基。下面主要说明他们为什么线性无关。假设他们线性相关，即存在一组$\lambda\neq\mathbf{0}$，使得$\lambda_2\mathbf{a}_2+\lambda_4\mathbf{a}_4+\lambda_5\mathbf{a}_5+\lambda_6\mathbf{a}_6=0$，也就是说，可以构造$\lambda=[0, \lambda_2, 0, \lambda_4, \lambda_5, \lambda_6, 0]$，使得$\mathbf{A}\lambda=0$。那么还可以再构造两个异于$x$的解：$x&amp;rsquo;=x+\theta\lambda$和$x^{&amp;rsquo;&amp;rsquo;}=x-\theta\lambda$。他们都满足$\mathbf{Ax=b}$。并且可以通过控制$\theta$取很小的正值，使得这两个解满足都大于0的约束。由此这两个解都在凸多面体内，并且有$x=\frac{1}{2}(x&amp;rsquo;+x^{&amp;rsquo;&amp;rsquo;})$，但是这是有问题的，因为一个凸多面体的顶点是不能被内部点线性表示的，因此这几列是构成一组基的。&lt;/p&gt;
 &lt;div align=center&gt;
 &lt;p&gt;&lt;img src=&#34;https://wwb1-1258288365.cos.ap-beijing.myqcloud.com/img_1518535018.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -619,10 +619,10 @@ $$&lt;/p&gt;
 &lt;p&gt;以最小化问题为标准，我们的最终目标是最小化$\mathbf{c^Tx}$，因此一个很自然的贪心想法是每步的改善都尽可能地大，因此可以计算一下更新的目标函数值和原来的差值，取使得变化大的顶点继续下一步迭代。那么这个差值怎么能够向量化地计算呢？只有向量化地计算，才能避免一个一个地计算比较，提高效率。&lt;/p&gt;
 &lt;p&gt;假设$\mathbf{B}=\{\mathbf{a}_1, \mathbf{a}_2,\ldots, \mathbf{a}_m\}​$，那么对于任何一个非基向量$\mathbf{a}_e​$，都有$\mathbf{a}_e=\lambda_1\mathbf{a}_1+\ldots+\lambda_m\mathbf{a}_m​$。将$\lambda​$写完整：$\lambda=[\lambda_1,\lambda_2,\ldots,\lambda_m,0,0,\ldots,-1,\ldots,0]^T​$，差值
 $$
-\mathbf{c}^T\mathbf{x}&#39;-\mathbf{c}^T\mathbf{x}=\mathbf{c}^T(-\theta\lambda)=\theta(\mathbf{c}_e-\sum_{\mathbf{a}_i\in B}\lambda_i\mathbf{c}_i)
+\mathbf{c}^T\mathbf{x}&amp;rsquo;-\mathbf{c}^T\mathbf{x}=\mathbf{c}^T(-\theta\lambda)=\theta(\mathbf{c}_e-\sum_{\mathbf{a}_i\in B}\lambda_i\mathbf{c}_i)
 $$&lt;/p&gt;
 &lt;p&gt;因此我们要选使得这个值的绝对值最大的$\mathbf{a}_e​$。那么什么时候表示找到最优值应该停止呢？很明显，就是对于所有$\mathbf{a}_e​$，这个差值都大于等于0，即目标函数不再减小。因此，每次迭代，先计算差值，如果存在小于0的，就选一个使得差值绝对值最大的作为入基向量。&lt;/p&gt;
-&lt;p&gt;嗯，接下来就是要考虑向量化操作。首先我们看一下$\lambda$能不能向量化表示：由于$\mathbf{B}\lambda=\mathbf{a}_e$（$\lambda$只取基系数部分），因此$\lambda=\mathbf{B^{-1}}\mathbf{a}_e$，如果对整个矩阵$\mathbf{A}$左乘$\mathbf{B^{-1}}$，这就很有意思了，所有的非基列将变成该非基向量用基向量表示的系数，而所有的基列将变成$e_k$，即合起来成为一个单位阵的形式。这是很关键的一步，在单纯形算法实现中也涉及到，先记下。进一步，我们取$\mathbf{c}$的基部分$\mathbf{c_B}$，这样$\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$就等于了上式中的$\sum*_{\mathbf{a}_i\in \mathbf{B}}\lambda_i\mathbf{c}_i$的向量化形式（对所有的非基向量一同操作）。然后再加上一部分，变成$\mathbf{c}^T-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$，这就是最终的形式，称之为检验数$\bar{\mathbf{c}}$。很容易验证，基向量对应的检验数都是0，我们的目标就是通过迭代，使得$\bar{\mathbf{c}}\geq0$，这时对于任何一个可行解$\mathbf{y}$（$\mathbf{Ay=b,y\geq0}$），都有$\mathbf{c}^T\mathbf{y}\geq\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}\mathbf{y}=\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{b}=\mathbf{c}_\mathbf{B}^T\mathbf{x}_\mathbf{B}=\mathbf{c}^T\mathbf{x}$，即$\mathbf{x}$就是最优的。&lt;/p&gt;
+&lt;p&gt;嗯，接下来就是要考虑向量化操作。首先我们看一下$\lambda$能不能向量化表示：由于$\mathbf{B}\lambda=\mathbf{a}_e$（$\lambda$只取基系数部分），因此$\lambda=\mathbf{B^{-1}}\mathbf{a}_e$，如果对整个矩阵$\mathbf{A}$左乘$\mathbf{B^{-1}}$，这就很有意思了，所有的非基列将变成该非基向量用基向量表示的系数，而所有的基列将变成$e_k$，即合起来成为一个单位阵的形式。这是很关键的一步，在单纯形算法实现中也涉及到，先记下。进一步，我们取$\mathbf{c}$的基部分$\mathbf{c_B}$，这样$\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$就等于了上式中的$\sum*_{\mathbf{a}_i\in \mathbf{B}}\lambda_i\mathbf{c}&lt;em&gt;i$的向量化形式（对所有的非基向量一同操作）。然后再加上一部分，变成$\mathbf{c}^T-\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}$，这就是最终的形式，称之为检验数$\bar{\mathbf{c}}$。很容易验证，基向量对应的检验数都是0，我们的目标就是通过迭代，使得$\bar{\mathbf{c}}\geq0$，这时对于任何一个可行解$\mathbf{y}$（$\mathbf{Ay=b,y\geq0}$），都有$\mathbf{c}^T\mathbf{y}\geq\mathbf{c}_\mathbf{B}^T\mathbf{B}^{-1}\mathbf{A}\mathbf{y}=\mathbf{c}&lt;/em&gt;\mathbf{B}^T\mathbf{B}^{-1}\mathbf{b}=\mathbf{c}_\mathbf{B}^T\mathbf{x}_\mathbf{B}=\mathbf{c}^T\mathbf{x}$，即$\mathbf{x}$就是最优的。&lt;/p&gt;
 &lt;h2 id=&#34;5-单纯性算法核心单纯形表&#34;&gt;5 单纯性算法核心：单纯形表&lt;/h2&gt;
 &lt;p&gt;终于，一系列的讲解结束，单纯性算法也就顺理成章了。要将上面的一堆东西整理成一个简短高效的可行算法并不简单。先贴上算法伪代码：&lt;/p&gt;
 &lt;div align=center&gt;
@@ -647,13 +647,13 @@ $$&lt;/p&gt;
 &lt;p&gt;最关键最有意思的就是PIVOT算法，他巧妙地将我们介绍的繁杂操作使用一个简单的高斯行变换就实现了。而这个算法的载体就是单纯形表，如上图，左上角是目标函数值相反数$-z$，第一行是检验数$\bar{\mathbf{c}}$，左下角是基对应的部分解（其他部分是0，不用写出），右下角是矩阵$\mathbf{A}$。他始终被分块成两部分，基向量部分始终以单位阵的形式存在。注意左边的部分解每个分量都是严格对应着一个基向量，即他们是有顺序的。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;一行一行地看PIVOT算法。输入参数告诉我们下标为$l​$的向量被换出，因此找到他对应的那行，暂称为第$l​$行，这一行对应的基的下标要被换成$e​$，那么为什么更新后对应的解是$\frac{b_l}{a_{le}}​$呢，要注意，其实这个值就是$\theta​$，$b_l​$就是旧的$x_i​$，$a_{le}​$就是$\lambda_i​$（上面已经解释了乘上$\mathbf{B^{-1}}​$后每一列都是系数）。那么为什么更新后是$\theta​$呢？我们回到式子$\mathbf{x&#39;=x-\theta\lambda}​$，由于$b_l​$现在对应的新向量不是$\mathbf{x}​$对应的基向量，因此$\mathbf{x}​$在该位置的值是0，而我们知道$\lambda​$在入基向量对应的位置的值是-1，因此$0-(-1)\theta=\theta​$。&lt;/p&gt;
+&lt;p&gt;一行一行地看PIVOT算法。输入参数告诉我们下标为$l​$的向量被换出，因此找到他对应的那行，暂称为第$l​$行，这一行对应的基的下标要被换成$e​$，那么为什么更新后对应的解是$\frac{b_l}{a_{le}}​$呢，要注意，其实这个值就是$\theta​$，$b_l​$就是旧的$x_i​$，$a_{le}​$就是$\lambda_i​$（上面已经解释了乘上$\mathbf{B^{-1}}​$后每一列都是系数）。那么为什么更新后是$\theta​$呢？我们回到式子$\mathbf{x&amp;rsquo;=x-\theta\lambda}​$，由于$b_l​$现在对应的新向量不是$\mathbf{x}​$对应的基向量，因此$\mathbf{x}​$在该位置的值是0，而我们知道$\lambda​$在入基向量对应的位置的值是-1，因此$0-(-1)\theta=\theta​$。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;第3到4行，将第$l$行除以$a_{le}$，目的就是将$a_{le}$变成1，因为要始终保持基是以单位阵的形式存在。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;第8行，就是在执行$\mathbf{x&#39;=x-\theta\lambda}$的操作，得到新解。&lt;/p&gt;
+&lt;p&gt;第8行，就是在执行$\mathbf{x&amp;rsquo;=x-\theta\lambda}$的操作，得到新解。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;第10行，高斯行变换，你会发现这样操作完后，入基列就变成和刚才出基列一样，高斯行变换保证了矩阵的性质。&lt;/p&gt;
